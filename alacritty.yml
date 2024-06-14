@@ -2,11 +2,14 @@ font:
   size: 15
   # size: 17
   normal:
-    # family: JetBrainsMono Nerd Font
     # family: FiraCode Nerd Font Mono
-    family: SFMono Nerd Font
-    style: Semibold
-    use_thin_strokes: true
+    # family: SFMono Nerd Font
+    family: JetBrainsMonoNL Nerd Font
+    style: Bold
+    # style: SemiBold
+    # style: Semibold
+    # style: Retina
+    # use_thin_strokes: true
 
   offset:
     x: 0
@@ -91,7 +94,8 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.8
+  opacity: 0.5
+
 
   # Startup Mode (changes require restart)
   #
@@ -307,7 +311,7 @@ size: 11.0
 # Whether or not `window.opacity` applies to all cell backgrounds or only to
 # the default background. When set to `true` all cells will be transparent
 # regardless of their background color.
-#transparent_background_colors: false
+transparent_background_colors: true
 
 # Bell
 #
@@ -408,10 +412,10 @@ live_config_reload: true
 #     - -l
 #     - -c
 #     - "tmux attach || tmux"
-# shell:
-#   program: /usr/bin/zsh
-#   args:
-#     - --login
+shell:
+  program: /opt/homebrew/bin/fish
+  args:
+    - --login
 
 # Startup directory
 #
